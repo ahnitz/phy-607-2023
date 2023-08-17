@@ -1,0 +1,189 @@
+%% Welcome to the syllabus! This file isn't really created as an example, but I thought it might be interesting for you to see how I wrote it
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{mathptmx}
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage[colorlinks,urlcolor=red]{hyperref}
+\usepackage{cleveref}
+\usepackage{subcaption}
+\usepackage{booktabs}
+
+%can uncomment to try it
+%it seems to work for me, but the package is deprecated according to the docs. hopefully something new comes along!
+\usepackage[tagged,flatstructure]{accessibility}
+
+\makeatletter
+\@beginparpenalty=10000
+\makeatother
+
+\title{PHY 607 - Computational physics \\ Fall 2023 syllabus}
+\author{Prof. Alexander Nitz -- \href{mailto:ahnitz@syr.edu}{ahnitz@syr.edu}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Class information}
+
+Welcome to PHY 607! This three credit course is an introduction to using computers to solve problems relevant for physics research. The goal is to provide a foundation in programming, best practices, algorithms, and collaboration upon which one can build to employ more sophisticated techniques. The audience includes both students new to programming as well as those with some previous experience. The course is composed of
+lectures and tutorials on best practices and projects to build experience.
+
+\subsection*{Instructor}
+
+\begin{minipage}{0.5\textwidth}
+  Prof. Alexander Nitz \\
+  Office hours TBA
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+  \begin{flushright}
+  email: \href{mailto:ahnitz@syr.edu}{ahnitz@syr.edu} \\
+  office: Physics 263-I
+  \end{flushright}
+\end{minipage}
+
+\subsection*{Learning Objectives}
+Students will be able to
+\begin{itemize}
+\item create basic programs implementing numerical algorithms in python,
+\item learn best practices for validating and testing their programs,
+\item compare their results with more sophisticated techniques available in external packages,
+\item work collaboratively using version control,
+\item document results.
+\end{itemize}
+
+\subsection*{Meeting times}
+
+The scheduled class times are Tuesday and Thursday 2:00 - 3:20 PM in room 204. Since the class is not primarily lecture based, these times will be used as default times to schedule a number of different class types:
+\begin{description}
+\item[Full-class discussion sessions] When introducing the course and new projects, we will meet all together to discuss the basics of what we will be doing.
+\item[Small group sessions] When collaborating on a project, I will schedule discussion sessions with individual groups to review progress and issues.
+\item[Open lab sessions] For all other class times, plan to be present, working on projects. This gives you quick access to the professor and other students to answer questions.
+\end{description}
+The schedule details for individual days will be determined on an as-needed basis.
+
+\subsection*{Books and materials}
+
+\begin{itemize}
+\item A computer capable of using python and the SciPy programming stack is required for this course.
+\item A device for online video and text communication is also required.
+\item No textbook is required for this course. Suggested online resources will be supplied as needed.
+\end{itemize}
+
+\section*{Grading}
+
+\begin{table}[h]
+  \caption{Grade breakdown}
+\begin{center}
+  \begin{tabular}{cr}
+	\toprule
+    Four major projects & 20\% each \\
+    Pre-assignments & 10\% \\
+    Collaboration & 10\% \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+\end{table}
+
+Throughout the term, pre-assignments will be used for class and project organization. These will be graded for completion. The first major project will be completed individually, but for the rest you will work in assigned groups. The collaboration grade will be assigned based on peer assessment at the end of the term.
+
+\begin{table}[h]
+  \caption{Letter grades}
+\begin{center}
+  \begin{tabular}{cl}
+	\toprule
+	Score & Grade \\
+	\midrule
+	90+     &         A \\
+   85-89    &         A-\\
+   80-84    &         B+\\
+   75-79    &         B	\\
+   70-74    &         B-\\
+   65-69    &         C+\\
+   60-64    &         C	\\
+   55-59    &         C-\\
+   0-54    &         F \\
+   \bottomrule
+  \end{tabular}
+\end{center}
+\end{table}
+\newpage
+\section*{Course calendar}
+
+The following key dates are tentatively set for the semester, and may be adjusted based on progress in the course. Unlisted class dates will be scheduled as described in the section on meeting times, above.
+\begin{table}[h]
+  \caption{Key dates}
+\begin{center}
+  \begin{tabular}{lr}
+    \toprule
+    2022/8/30 & First class and project 1 intro \\
+    2022/9/9 & Project 1 due \\
+    2022/9/13 & Project 2 intro: Ordinary differential equations \\
+    2022/10/7 & Project 2 due \\
+    2022/10/11 & Project 3 intro: PDEs and linear algebra \\
+    2022/11/4 & Project 3 due \\
+    2022/11/8 & Project 4 intro: Monte Carlo methods \\
+    2022/11/21-25 & Thanksgiving break \\
+    2022/12/8 & Last day of class and project 4 due \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+\end{table}
+
+\section*{Course policy on missed work}
+
+All course projects are required. In the event of unforeseen circumstances causing difficulty completing work on-time, you must communicate in advance. Accommodations will be made on a case-by-case basis.
+
+\section*{Course policy on academic integrity}
+
+You are encouraged to discuss everything in the course with your peers and to search online for example solutions to programming questions. But all code and documentation you submit must be your own work. Syracuse University’s \href{https://class.syr.edu/academic-integrity/policy/}{Academic Integrity Policy} governs general expectations for students.
+
+\section*{Online etiquette}
+
+It may be necessary to have some class meetings or group discussion online. When interacting with your colleagues over the internet, there are a few simple things you can do that will make life easier for everyone and keep the environment friendly:
+\begin{itemize}
+\item First, make sure you are aware of what you are transmitting. (If you’re sending video over the internet, for instance, make sure you’re wearing appropriate clothing!) Treat online class meetings as you would treat classes in person.
+\item If you are in a larger group, keep your microphone muted unless you are actively talking; this is especially important if you are in a noisy place or if you are using a built-in microphone on a laptop or cellphone. 
+\item If you are using a platform such as Zoom that allows you to change your name, please modify your name to include your personal pronouns, e.g. “Alex Nitz (he/him)”. If you are referring to someone whose pronouns you do not know, it is always appropriate to use they/them. 
+\end{itemize}
+
+\section*{Inclusion}
+
+Everyone in this class is an equally-valued member of this university and our community. We expect you to treat your classmates as honored colleagues in the collective endeavor we are all involved in: to understand the natural world and use that understanding to improve our society. 
+
+In particular, bias against or denigration of anyone in our class because of their gender or how they express it, their sexual orientation, their religion, their national origin, their race or ethnicity, or a disability they may have will not be tolerated. If you are the target of this sort of bias or if you witness it, please report it directly to me and I will take swift action. If you don’t feel comfortable talking to me, you may report it anonymously to the Physics Department at 
+\href{https://syracuseuniversity.qualtrics.com/jfe/form/SV_9pORpTKnq6pLeyF}{the department confidential complaint form}.
+
+\newpage
+
+\section*{Syracuse University Policies}
+Students should review the University’s policies regarding: Diversity and Disability: \url{https://www.syracuse.edu/life/accessibilitydiversity/};  the Religious Observances Notification and Policy: \url{http://supolicies.syr.edu/studs/religious_observance.htm}; and Orange SUccess: \url{http://orangesuccess.syr.edu/getting-started-2/}.
+
+\subsection*{University Attendance Policy}
+Attendance in classes is expected in all courses at Syracuse University. Students are expected to arrive on campus in time to attend the first meeting of all classes for which they are registered. Students who do not attend classes starting with the first scheduled meeting may be academically withdrawn as not making progress toward degree by failure to attend. Instructors set course-specific policies for absences from scheduled class meetings in their syllabi.
+
+It is a federal requirement that students who do not attend or cease to attend a class to be reported at the time of determination by the faculty. Faculty should use “ESPR” and “MSPR” in Orange Success to alert the Office of the Registrar and the Office of Financial Aid. A grade of NA is posted to any student for whom the Never Attended flag is raised in Orange SUccess. More information regarding Orange SUccess can be found here, at \url{http://orangesuccess.syr.edu/getting-started-2/}.
+
+\subsection*{Disability-Related Accommodations}
+
+Syracuse University values diversity and inclusion; we are committed to a climate of mutual respect and full participation.  There may be aspects of the instruction or design of this course that result in barriers to your inclusion and full participation in this course.  I invite any student to meet with me to discuss strategies and/or accommodations (academic adjustments) that may be essential to your success and to collaborate with the Center for Disability Resources (CDR) in this process.
+
+If you would like to discuss disability-accommodations or register with CDR, please visit their website at \url{https://disabilityresources.syr.edu}. Please call (315) 443-4498 or email disabilityresources@syr.edu for more detailed information.
+
+CDR is responsible for coordinating disability-related academic accommodations and will work with the student to develop an access plan. Since academic accommodations may require early planning and generally are not provided retroactively, please contact CDR as soon as possible to begin this process.
+
+\subsection*{Academic Integrity Policy}
+
+Syracuse University’s Academic Integrity Policy reflects the high value that we, as a university community, place on honesty in academic work. The policy defines our expectations for academic honesty and holds students accountable for the integrity of all work they submit. Students should understand that it is their responsibility to learn about course-specific expectations, as well as about university-wide academic integrity expectations. The policy governs appropriate citation and use of sources, the integrity of work submitted in exams and assignments, and the veracity of signatures on attendance sheets and other verification of participation in class activities. The policy also prohibits students from submitting the same work in more than one class without receiving written authorization in advance from both instructors. Under the policy, students found in violation are subject to grade sanctions determined by the course instructor and non-grade sanctions determined by the School or College where the course is offered as described in the Violation and Sanction Classification Rubric. SU students are required to read an online summary of the University’s academic integrity expectations and provide an electronic signature agreeing to abide by them twice a year during pre-term check-in on MySlice. 
+
+\end{document}
