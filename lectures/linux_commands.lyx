@@ -2307,33 +2307,13 @@ drwxr-xr-x.
 
 \begin_layout Plain Layout
 
-[ahnitz@ahn-x3100 WT_120MHz]$ ls -l protons
+[ahnitz@fedora .git]$ ls -l config 
 \end_layout
 
 \begin_layout Plain Layout
 
-lrwxr-xr-x 1 ahnitz auger 126 Jan  2  2015 
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-protons-> /afs/auger.mtu.edu/common/data/pauger_SIM_EVENTS/
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-beyond_2015/B2015FixedETProtonEpos_gr318_B2015v2r8_unpacked/
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-en19.800/th38.000
+-rw-r--r--.
+ 1 ahnitz ahnitz 255 Aug 28 15:32 config 
 \end_layout
 
 \end_inset
@@ -2514,8 +2494,8 @@ Aside: How does one include custom commands in your search path?
 
 \begin_deeper
 \begin_layout Itemize
-Best way is to add the directory that contains them to your PATH variable
- in your .bash_profile file
+One way is to add the directory that contains them to your PATH variable
+ in your .bash_profile (or .bashrc or .profile) file
 \end_layout
 
 \end_deeper
@@ -2524,6 +2504,47 @@ Best way is to add the directory that contains them to your PATH variable
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Environment Variables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+`export` sets environment variables
+\end_layout
+
+\begin_layout Itemize
+`source` executes a script and adds any environment variables as if run
+ by hand
+\end_layout
+
+\begin_layout Itemize
+Key variables
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+path: controls what commands are accessible
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -3415,7 +3436,7 @@ rsync -av ~/phy607/ ahnitz@example.syracuse.edu:ph607
 status open
 
 \begin_layout Plain Layout
-Syncing files from MTU server
+Syncing files from server
 \end_layout
 
 \end_inset
@@ -3437,7 +3458,7 @@ Syncing files from MTU server
 \end_layout
 
 \begin_layout Standard
-# rsync4390_from_mtu
+# rsync4390_from
 \end_layout
 
 \begin_layout Standard
@@ -3578,6 +3599,10 @@ textwidth
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+https://github.com/git-guides
+\end_layout
+
 \begin_layout Itemize
 Pro Git by Chacon & Straub: https://progit2.s3.amazonaws.com/en/2015-09-08-d73ca/pr
 ogit-en.816.pdf
