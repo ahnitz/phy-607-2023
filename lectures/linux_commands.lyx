@@ -1,0 +1,3645 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Madrid}
+\usecolortheme{seagull}
+\setbeamertemplate{blocks}[rounded][shadow=true] 
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[text line]{\hfill\insertframenumber/\inserttotalframenumber}
+\setbeamercovered{transparent}
+\setbeamercolor{block body alerted}{fg=black,bg=red!10}
+\setbeamercolor{block body example}{fg=black,bg=blue!10}
+\setbeamertemplate{blocks}[rounded]
+\definecolor{light-gray}{gray}{0.95}
+\setbeamercolor{block body}{bg=light-gray,fg=black}
+\usefonttheme[onlymath]{serif}
+\usepackage[normalem]{ulem}
+\usepackage[samesize]{cancel}
+\usepackage{xcolor}
+\usepackage{keystroke}
+\renewcommand{\CancelColor}{\color{red}}
+\usepackage{feyn}
+%\renewcommand{\xymatrix}{\Diagram}
+\newcommand{\msout}[1]{\text{\sout{\ensuremath{#1}}}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation landscape
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.75in
+\topmargin 0.75in
+\rightmargin 0.75in
+\bottommargin 0.75in
+\headheight 0.25in
+\headsep 0.25in
+\footskip 0.25in
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PHY 607 - Computational Physics
+\end_layout
+
+\begin_layout Subtitle
+Linux Command Line
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Linux Command Line
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The Linux command line interface is provided through the 
+\begin_inset Quotes eld
+\end_inset
+
+shell
+\begin_inset Quotes erd
+\end_inset
+
+, which interprets and executes commands entered in a terminal emulator
+\end_layout
+
+\begin_layout Itemize
+Several shells have been developed and used over the years
+\end_layout
+
+\begin_layout Description
+
+\color red
+sh
+\color inherit
+ The original shell developed in 1977, also called the 
+\begin_inset Quotes eld
+\end_inset
+
+Bourne shell
+\begin_inset Quotes erd
+\end_inset
+
+; still guaranteed to be present in all Unix/Linux systems
+\end_layout
+
+\begin_layout Description
+
+\color red
+bash
+\color inherit
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Bourne shell again
+\begin_inset Quotes erd
+\end_inset
+
+, replacement for 
+\begin_inset Quotes eld
+\end_inset
+
+sh
+\begin_inset Quotes erd
+\end_inset
+
+; default shell in current Linux distributions.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\color red
+zsh
+\color inherit
+ A derivation of bash which is the default on MaxOSX
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+We will use 
+\begin_inset Quotes eld
+\end_inset
+
+bash
+\begin_inset Quotes erd
+\end_inset
+
+ in this class
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Linux File System
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The Linux file system is made up of many nested directories.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The location of each file is given by a 
+\begin_inset Quotes eld
+\end_inset
+
+path
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Paths can be 
+\begin_inset Quotes eld
+\end_inset
+
+absolute
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+relative
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Absolute paths start with 
+\begin_inset Quotes eld
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example, 
+\begin_inset Quotes eld
+\end_inset
+
+/usr/bin
+\begin_inset Quotes erd
+\end_inset
+
+, the directory where most system tools reside
+\end_layout
+
+\begin_layout Itemize
+Relative paths are relative to the 
+\begin_inset Quotes eld
+\end_inset
+
+current working directory
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The command 
+\begin_inset Quotes eld
+\end_inset
+
+pwd
+\begin_inset Quotes erd
+\end_inset
+
+ (print working directory) will display the full absolute path of the current
+ working directory
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Linux File System
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Paths relative to the current working directory
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One dot 
+\begin_inset Quotes eld
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+ denotes the current working directory
+\end_layout
+
+\begin_layout Itemize
+Two dots 
+\begin_inset Quotes eld
+\end_inset
+
+..
+\begin_inset Quotes erd
+\end_inset
+
+ denotes the parent of the current working directory
+\end_layout
+
+\begin_layout ExampleBlock
+If current working directory is 
+\begin_inset Quotes eld
+\end_inset
+
+/usr/local/bin, then 
+\begin_inset Quotes eld
+\end_inset
+
+./lyx
+\begin_inset Quotes erd
+\end_inset
+
+ designates the same file as 
+\begin_inset Quotes eld
+\end_inset
+
+/usr/local/bin/lyx
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+If current working directory is 
+\begin_inset Quotes eld
+\end_inset
+
+/usr/local/lib
+\begin_inset Quotes erd
+\end_inset
+
+, then 
+\begin_inset Quotes eld
+\end_inset
+
+../bin/lyx
+\begin_inset Quotes erd
+\end_inset
+
+ designates the same file as 
+\begin_inset Quotes eld
+\end_inset
+
+/usr/local/bin/lyx
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The 
+\begin_inset Quotes eld
+\end_inset
+
+home
+\begin_inset Quotes erd
+\end_inset
+
+ directory
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tilde 
+\begin_inset Quotes eld
+\end_inset
+
+~
+\begin_inset Quotes erd
+\end_inset
+
+ denotes the user's home directory
+\end_layout
+
+\end_deeper
+\begin_layout AlertBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+If the user's home directory is 
+\begin_inset Quotes eld
+\end_inset
+
+/home/jsmith
+\begin_inset Quotes erd
+\end_inset
+
+, then 
+\begin_inset Quotes eld
+\end_inset
+
+~/Documents/syllabus.pdf
+\begin_inset Quotes erd
+\end_inset
+
+ designates the same file as 
+\begin_inset Quotes eld
+\end_inset
+
+/home/jsmith/Documents/syllabus.pdf
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Linux File System
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Navigating the file system
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Quotes eld
+\end_inset
+
+pwd
+\begin_inset Quotes erd
+\end_inset
+
+ displays the current working directory
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Quotes eld
+\end_inset
+
+cd
+\begin_inset Quotes erd
+\end_inset
+
+ changes the current working directory
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+Without an argument it changes to the default 
+\begin_inset Quotes eld
+\end_inset
+
+home
+\begin_inset Quotes erd
+\end_inset
+
+ directory
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+With an argument it changes to the specified directory
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size small
+\begin_inset Quotes eld
+\end_inset
+
+ls
+\begin_inset Quotes erd
+\end_inset
+
+ lists the files in the current working directory
+\end_layout
+
+\begin_layout ColumnsTopAligned
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+6cm
+\end_layout
+
+\begin_layout Example
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 ~]$ pwd
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color blue
+/home/phy607
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 ~]$ ls
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color blue
+bin Documents Music Pictures Templates
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color blue
+Desktop Downloads phy607 Public Videos
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 ~]$ cd phy607
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 phy607]$ ls
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color blue
+lecture1 lecture3 resources 
+\color green
+syllabus.lyx
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color blue
+lecture2 lecture4
+\end_layout
+
+\end_deeper
+\begin_layout Column
+6cm
+\end_layout
+
+\begin_layout Example
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 phy607]$ cd ../bin
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 bin]$ pwd
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color blue
+/home/phy607/bin
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 bin]$ cd ~/phy607
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+[phy607@ahn-x200 phy607]$ pwd
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color blue
+/home/phy607/phy607
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Examining Files
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Text files, that is
+\end_layout
+
+\begin_layout Description
+
+\color blue
+tail
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\series default
+\shape default
+\color inherit
+ displays last few lines of a file.
+ Good for looking at log files
+\end_layout
+
+\begin_layout Description
+
+\color blue
+head
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\color inherit
+ 
+\series default
+\shape default
+displays first few lines of a file.
+ Good for quick check of file contents
+\end_layout
+
+\begin_layout Description
+
+\color blue
+more
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\color inherit
+ 
+\series default
+\shape default
+allows paging through a file
+\end_layout
+
+\begin_layout Description
+
+\color blue
+less
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\series default
+\shape default
+\color inherit
+ allows scrolling through a file in both directions
+\end_layout
+
+\begin_layout AlertBlock
+Spaces are not allowed in Linux file names!
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+file_name
+\begin_inset Quotes erd
+\end_inset
+
+ can also be a complete path.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Creating Files
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\color blue
+cat
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+>file_name
+\series default
+\shape default
+\color inherit
+ Copies from terminal to file.
+ Finish with ^d.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+touch
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\color inherit
+ 
+\series default
+\shape default
+Changes date/time of file to current; creates if doesn't exist.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+nano
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\color inherit
+ 
+\series default
+\shape default
+Simple text editor; creates file if doesn't exist.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+vim
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\series default
+\shape default
+\color inherit
+ More powerful text editor; creates file if doesn't exist.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+emacs
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\series default
+\shape default
+\color inherit
+ Extremely powerful and extensible text editor; creates file if doesn't
+ exist.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Moving, Copying, and Deleting Files
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\size small
+\color blue
+cp
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file1
+\begin_inset space \space{}
+\end_inset
+
+file2
+\series default
+\shape default
+ 
+\color black
+Copy file1 to file2.
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+cp
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file1
+\begin_inset space \space{}
+\end_inset
+
+dir/ 
+\series default
+\shape default
+\color black
+Copy file1 to file1 in directory 
+\begin_inset Quotes eld
+\end_inset
+
+dir
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+ is not necessary if directory already exists (but is recommended to avoid
+ unintended consequences if the directory does not exist).
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+cp
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file*
+\begin_inset space \space{}
+\end_inset
+
+dir/ 
+\series default
+\shape default
+\color black
+Copy all files matching pattern 
+\begin_inset Quotes eld
+\end_inset
+
+file*
+\begin_inset Quotes erd
+\end_inset
+
+ to directory 
+\begin_inset Quotes eld
+\end_inset
+
+dir
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+mv
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file1
+\begin_inset space \space{}
+\end_inset
+
+file2 
+\series default
+\shape default
+\color black
+Move file1 to file2.
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+mv
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file1
+\begin_inset space \space{}
+\end_inset
+
+dir/ 
+\series default
+\shape default
+\color black
+Move file1 to file1 in directory 
+\begin_inset Quotes eld
+\end_inset
+
+dir
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+rm
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file 
+\series default
+\shape default
+\color black
+Remove file.
+ Be careful, there is no undoing this (there is no trash can or recycle
+ bin!)
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+rm
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+-rf
+\begin_inset space \space{}
+\end_inset
+
+* 
+\series default
+\shape default
+\color black
+Remove directory, all files in it, and all its subdirectories.
+ 
+\color red
+You probably really don't want to do this
+\color black
+.
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+rmdir
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+dir 
+\series default
+\shape default
+\color black
+Remove directory 
+\begin_inset Quotes eld
+\end_inset
+
+dir
+\begin_inset Quotes erd
+\end_inset
+
+.
+ By default this will not remove a non-empty directory.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Wildcards
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The command line will accept 
+\begin_inset Quotes eld
+\end_inset
+
+wildcards
+\begin_inset Quotes erd
+\end_inset
+
+, which makes operations on multiple files much easier.
+ Wildcards are a special case of the more general 
+\begin_inset Quotes eld
+\end_inset
+
+regular expressions
+\begin_inset Quotes erd
+\end_inset
+
+, which we will cover in more detail later.
+\end_layout
+
+\begin_layout Standard
+The wildcard 
+\begin_inset Quotes eld
+\end_inset
+
+*
+\begin_inset Quotes erd
+\end_inset
+
+ means match zero or more of any character.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+ls
+\begin_inset space \space{}
+\end_inset
+
+*
+\color inherit
+ List all standard files and the contents of all standard directories in
+ the current working directory.
+ 
+\end_layout
+
+\begin_layout Description
+
+\color blue
+ls
+\begin_inset space \space{}
+\end_inset
+
+.*
+\color inherit
+ List all 
+\begin_inset Quotes eld
+\end_inset
+
+hidden
+\begin_inset Quotes erd
+\end_inset
+
+ files in the current working directory, and all non-hidden files in hidden
+ directories.
+ By default, files whose names start with a 
+\begin_inset Quotes eld
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+ are hidden and don't show up in directory listings.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+mv
+\begin_inset space \space{}
+\end_inset
+
+foo*.dat
+\begin_inset space \space{}
+\end_inset
+
+newdir/
+\color inherit
+ Move all files whose names start with 
+\begin_inset Quotes eld
+\end_inset
+
+foo
+\begin_inset Quotes erd
+\end_inset
+
+ and end with 
+\begin_inset Quotes eld
+\end_inset
+
+.dat
+\begin_inset Quotes erd
+\end_inset
+
+ to the directory 
+\begin_inset Quotes eld
+\end_inset
+
+newdir
+\begin_inset Quotes erd
+\end_inset
+
+.
+ If 
+\begin_inset Quotes eld
+\end_inset
+
+newdir
+\begin_inset Quotes erd
+\end_inset
+
+ does not exist and error message will be printed.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Switches
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Most Linux commands accept a number of switches which modify the behavior
+ of the command.
+ We've already seen one example for the 
+\begin_inset Quotes eld
+\end_inset
+
+rm
+\begin_inset Quotes erd
+\end_inset
+
+ command.
+ 
+\end_layout
+
+\begin_layout Itemize
+For some commands the switches are simple letters or keywords appropriately
+ placed.
+\end_layout
+
+\begin_layout Itemize
+For others they are letters or keywords following a single dash
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+And for yet others they are keywords following a double dash 
+\begin_inset Quotes eld
+\end_inset
+
+–
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Newer commands use this format, and some commands also keep the older format
+ for compatibility.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+How can you know? Check the documentation!
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Documentation
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Where does one find Linux Documentation?
+\end_layout
+
+\begin_layout Enumerate
+Check the 
+\begin_inset Quotes eld
+\end_inset
+
+man
+\begin_inset Quotes erd
+\end_inset
+
+ pages.
+ Most Linux commands will have a 
+\begin_inset Quotes eld
+\end_inset
+
+man
+\begin_inset Quotes erd
+\end_inset
+
+ page which can be accessed via 
+\begin_inset Quotes eld
+\end_inset
+
+man
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example: 
+\begin_inset Quotes eld
+\end_inset
+
+man ls
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try the 
+\begin_inset Quotes eld
+\end_inset
+
+info
+\begin_inset Quotes erd
+\end_inset
+
+ command.
+ Many Linux commands will have an 
+\begin_inset Quotes eld
+\end_inset
+
+info
+\begin_inset Quotes erd
+\end_inset
+
+ section, which provides more detailed information than 
+\begin_inset Quotes eld
+\end_inset
+
+man
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The info can be accessed via 
+\begin_inset Quotes eld
+\end_inset
+
+info
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example: 
+\begin_inset Quotes eld
+\end_inset
+
+info ls
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try inline help.
+ Many commands will display a short help when the switch 
+\begin_inset Quotes eld
+\end_inset
+
+–help
+\begin_inset Quotes erd
+\end_inset
+
+ is supplied.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example: 
+\begin_inset Quotes eld
+\end_inset
+
+ls –help
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Do a 
+\begin_inset Quotes eld
+\end_inset
+
+Google
+\begin_inset Quotes erd
+\end_inset
+
+ search.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redirection and Pipes
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Combining simple utilities to make more complex operations
+\end_layout
+
+\begin_layout Itemize
+Many programs send their normal output to 
+\begin_inset Quotes eld
+\end_inset
+
+standard output (stdout)
+\begin_inset Quotes erd
+\end_inset
+
+ and error output to 
+\begin_inset Quotes eld
+\end_inset
+
+standard error (stderr)
+\begin_inset Quotes erd
+\end_inset
+
+ by default.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For example, this is the case for ls, head, and tail.
+ 
+\end_layout
+
+\begin_layout Itemize
+Some programs also accept input from 
+\begin_inset Quotes eld
+\end_inset
+
+standard input (stdin)
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+These can be redirected through use of the following symbols:
+\end_layout
+
+\begin_layout Description
+
+\color blue
+>
+\begin_inset space \space{}
+\end_inset
+
+file_name
+\color inherit
+ Redirects stdout to a file named file_name.
+ If the file does not exist, it is created.
+ If it exists, it is overwritten.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+>>
+\begin_inset space \space{}
+\end_inset
+
+file_name
+\color inherit
+ Redirects stdout to a file in append mode.
+ If the file does not exist, it is created.
+ If it exists, the new information is appended to the file.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+|
+\color inherit
+ Pipes the stdout of one program to the stdin of another program.
+\end_layout
+
+\begin_layout Description
+
+\color blue
+tee
+\begin_inset space \space{}
+\end_inset
+
+file_name
+\color inherit
+ Read from stdin and write to stdout and file.
+ Useful with pipes.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redirection and Pipes
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ls -l /usr/bin |tee ls-output.txt | less
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+sed -e "s/
+\backslash
+`define/
+\backslash
+#define/" <sde_trigger_options.vh | 
+\backslash
+ 
+\end_layout
+
+\begin_layout Block
+sed -e "s/
+\backslash
+`ifndef/
+\backslash
+#ifndef/" | 
+\backslash
+ 
+\end_layout
+
+\begin_layout Block
+sed -e "s/
+\backslash
+`endif/
+\backslash
+#endif/" | 
+\backslash
+
+\end_layout
+
+\begin_layout Block
+sed -e "s/'h/0x/" 
+\backslash
+ 
+\end_layout
+
+\begin_layout Block
+> ../drivers/sde_trigger_v1_2/src/sde_trigger_options.h 
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ls -l /usr/bin >ls-output.txt 2>&1
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ls -l /usr/bin >/dev/null 2>ls-errors.txt
+\end_layout
+
+\end_deeper
+\begin_layout FragileFrame
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+
+\size huge
+\color blue
+File Permissions
+\end_layout
+
+\begin_layout ExampleBlock
+
+\family typewriter
+\size scriptsize
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+lstparams "basicstyle={\tiny}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[ahnitz@ahn-nuc hdl]$ ls -l /bin | tail --lines=4
+\end_layout
+
+\begin_layout Plain Layout
+
+-rwxr-xr-x  1 root root  770248 Apr  5  2012 vi
+\end_layout
+
+\begin_layout Plain Layout
+
+lrwxrwxrwx.
+ 1 root root       2 Aug 28  2014 view -> vi
+\end_layout
+
+\begin_layout Plain Layout
+
+lrwxrwxrwx.
+ 1 root root       8 Aug 28  2014 ypdomainname -> hostname
+\end_layout
+
+\begin_layout Plain Layout
+
+-rwxr-xr-x  1 root root      62 Mar 17  2014 zcat
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The fields displayed are:
+\end_layout
+
+\begin_layout Enumerate
+Permissions (11 characters)
+\end_layout
+
+\begin_layout Enumerate
+# of hard links (usually not important – use soft links instead)
+\end_layout
+
+\begin_layout Enumerate
+Owner of the file
+\end_layout
+
+\begin_layout Enumerate
+Owner group of the file
+\end_layout
+
+\begin_layout Enumerate
+Size of the file
+\end_layout
+
+\begin_layout Enumerate
+Date of last update
+\end_layout
+
+\begin_layout Enumerate
+Name of the file
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+
+\size huge
+\color blue
+File Permissions
+\end_layout
+
+\begin_layout ExampleBlock
+
+\family typewriter
+\size scriptsize
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+lstparams "basicstyle={\tiny}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[ahnitz@ahn-nuc hdl]$ ls -l /bin | tail --lines=4
+\end_layout
+
+\begin_layout Plain Layout
+
+-rwxr-xr-x  1 root root  770248 Apr  5  2012 vi
+\end_layout
+
+\begin_layout Plain Layout
+
+lrwxrwxrwx.
+ 1 root root       2 Aug 28  2014 view -> vi
+\end_layout
+
+\begin_layout Plain Layout
+
+lrwxrwxrwx.
+ 1 root root       8 Aug 28  2014 ypdomainname -> hostname
+\end_layout
+
+\begin_layout Plain Layout
+
+-rwxr-xr-x  1 root root      62 Mar 17  2014 zcat
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+The permissions are further broken down as
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+1st
+\begin_inset space \space{}
+\end_inset
+
+character: 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+=normal file, 
+\begin_inset Quotes eld
+\end_inset
+
+d
+\begin_inset Quotes erd
+\end_inset
+
+=directory, 
+\begin_inset Quotes eld
+\end_inset
+
+l
+\begin_inset Quotes erd
+\end_inset
+
+=symbolic link, + less seen
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+Characters
+\begin_inset space \space{}
+\end_inset
+
+2-4: Owner permissions for read, write, and execute, respectively
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+Characters
+\begin_inset space \space{}
+\end_inset
+
+5-7: Group permissions for read, write, and execute, respectively 
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+Characters
+\begin_inset space \space{}
+\end_inset
+
+8-10: World permissions for read, write, and execute, respectively
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+Character
+\begin_inset space \space{}
+\end_inset
+
+11: Indicates alternate access method (eg.
+ SELinux)
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+In the 3 character permissions
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\size footnotesize
+- indicates permission is not granted
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+r means read permission is granted
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+w means write permission is granted
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+x means execute permission is granted
+\end_layout
+
+\end_deeper
+\begin_layout Block
+
+\size footnotesize
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Letters & field positions are redundant; rwxr-xr-x = 0755 octal
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+File Permissions & Links
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\family typewriter
+\size scriptsize
+\begin_inset listings
+lstparams "basicstyle={\scriptsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[ahnitz@ahn-hnuc ~]$ ls -l /etc | tail --lines=2
+\end_layout
+
+\begin_layout Plain Layout
+
+-rw-r--r--.
+  1 root         root       813 Oct 14  2014 yum.conf
+\end_layout
+
+\begin_layout Plain Layout
+
+drwxr-xr-x.
+  2 root         root      4096 Jan  8  2015 yum.repos.d
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+[ahnitz@ahn-x3100 WT_120MHz]$ ls -l protons
+\end_layout
+
+\begin_layout Plain Layout
+
+lrwxr-xr-x 1 ahnitz auger 126 Jan  2  2015 
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+protons-> /afs/auger.mtu.edu/common/data/pauger_SIM_EVENTS/
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+beyond_2015/B2015FixedETProtonEpos_gr318_B2015v2r8_unpacked/
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+en19.800/th38.000
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Top 
+\begin_inset Quotes eld
+\end_inset
+
+ls
+\begin_inset Quotes erd
+\end_inset
+
+ shows example of difference between file permissions and directory permissions
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Bottom 
+\begin_inset Quotes eld
+\end_inset
+
+ls
+\begin_inset Quotes erd
+\end_inset
+
+ shows example of symbolic link to create a 
+\begin_inset Quotes eld
+\end_inset
+
+shortcut
+\begin_inset Quotes erd
+\end_inset
+
+ for a long path
+\end_layout
+
+\begin_layout Description
+
+\size scriptsize
+\color blue
+ln
+\begin_inset space \space{}
+\end_inset
+
+-s
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+Target
+\begin_inset space \space{}
+\end_inset
+
+Link_name
+\series default
+\shape default
+\size small
+\color inherit
+ 
+\size scriptsize
+Create a symbolic link in the current directory with name 
+\shape italic
+Link_name
+\shape default
+ to file or directory
+\shape italic
+ Target
+\shape default
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+Symbolic links can cross file systems, even link files between local machine
+ disk and network file system disks
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+Hard links are limited to local file system
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Shell Scripts
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Linux provides a natural way to combine existing commands into customized
+ commands using a 
+\begin_inset Quotes eld
+\end_inset
+
+shell script
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+If a shell script is given the 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+ permission, and is placed in the user's search path, then it can be invoked
+ just like any other Linux shell command.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For example, 
+\begin_inset Quotes eld
+\end_inset
+
+chmod 755 my_command
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Aside: How does one include custom commands in your search path?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Best way is to add the directory that contains them to your PATH variable
+ in your .bash_profile file
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Metacharacters on the Command Line
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+Metacharacters have a special meaning aside from their literal meaning
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Literal characters are those that are taken at face value
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+We've already discussed the shell metacharacters *, |, >, <, and >>.
+ Some other shell metacharacters are
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+?
+\color inherit
+ Match any one character
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+[abc...]
+\begin_inset space \space{}
+\end_inset
+
+or
+\begin_inset space \space{}
+\end_inset
+
+[a-z,0-9]
+\color inherit
+ Match any one of the enclosed characters
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+[!abc...]
+\color inherit
+ Match any character not enclosed
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+
+\backslash
+ 
+\color inherit
+Interpret the next character literally (eg.
+ 
+\size footnotesize
+\color red
+
+\backslash
+*
+\size small
+\color inherit
+)
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+`cmd`
+\color inherit
+ Replace with output of cmd (eg.
+ 
+\size footnotesize
+\color red
+gcc `ls m*.c`
+\size small
+\color inherit
+) using the backtick character
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+;
+\color inherit
+ Execute a sequence of commands entered in one line (eg.
+ 
+\size footnotesize
+\color red
+cd other; ls
+\size small
+\color inherit
+)
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+||
+\color inherit
+ Execute the second command only if the 1st command fails (eg.
+ 
+\size footnotesize
+\color red
+gcc myprog.c || echo compilation failed
+\size small
+\color inherit
+)
+\end_layout
+
+\begin_layout Description
+
+\size small
+\color blue
+&&
+\color inherit
+ Execute the second command only if the 1st command succeeds (eg.
+ 
+\size footnotesize
+\color red
+gcc myprog.c || echo compilation succeeded
+\size small
+\color inherit
+)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Regular Expressions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Regular expressions are made up of metacharacters and literal characters
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Can be used in arguments to some programs (find, grep, sed, ...)
+\end_layout
+
+\begin_layout Itemize
+Some metacharacters behave differently in regular expressions and the command
+ line.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+
+\color blue
+Alphanumeric
+\begin_inset space \space{}
+\end_inset
+
+characters
+\color inherit
+ (eg.
+ A-Z, a-z, 0-9) match themselves
+\end_layout
+
+\begin_layout Description
+
+\color blue
+.
+
+\color inherit
+ matches any single character
+\end_layout
+
+\begin_layout Description
+
+\color blue
+?
+\color inherit
+ matches 0 or 1 
+\color red
+of the preceding element
+\end_layout
+
+\begin_layout Description
+
+\color blue
++
+\color inherit
+ matches 1 or more 
+\color red
+of the preceding element
+\end_layout
+
+\begin_layout Description
+
+\color blue
+*
+\color inherit
+ matches 0 or more 
+\color red
+of the preceding element
+\end_layout
+
+\begin_layout Description
+
+\color blue
+[
+\begin_inset space \space{}
+\end_inset
+
+]
+\color inherit
+ matches any single character within the backets
+\end_layout
+
+\begin_layout Description
+
+\color blue
+[^
+\begin_inset space \space{}
+\end_inset
+
+]
+\color inherit
+ matches any single character not within the brackets
+\end_layout
+
+\begin_layout Description
+
+\color blue
+^
+\color inherit
+ matches the starting position within a string or line
+\end_layout
+
+\begin_layout Description
+
+\color blue
+$
+\color inherit
+ matches the ending position within a string or line
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Regular Expressions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\size footnotesize
+\color blue
+a.?b
+\color inherit
+ matches ab, abb, a1b, but not aaab.
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+a?b 
+\color inherit
+matches ab, b, but not abb.
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+a.+b
+\color inherit
+ matches abb but not ab.
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+[a-z]?1
+\color inherit
+ matches 1, a1, z1, but not aa1.
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+.at
+\color inherit
+ matches any three-character string ending with "at", including "hat", "cat",
+ and "bat" 
+\color green
+(this & following examples are from Wikipedia)
+\color inherit
+.
+ 
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+[hc]at
+\color inherit
+ matches "hat" and "cat".
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+[^b]at
+\color inherit
+ matches all strings matched by .at except "bat".
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+[^hc]at
+\color inherit
+ matches all strings matched by .at other than "hat" and "cat".
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+^[hc]at
+\color inherit
+ matches "hat" and "cat", but only at the beginning of the string or line.
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+[hc]at$
+\color inherit
+ matches "hat" and "cat", but only at the end of the string or line.
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+
+\backslash
+[.
+\backslash
+]
+\color inherit
+ matches any single character surrounded by "[" and "]" since the brackets
+ are escaped, for example: "[a]" and "[b]".
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+s.*
+\color inherit
+ matches any positive number of characters preceded by s, for example: "saw"
+ and "seed".
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Some Other Important Commands
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\size footnotesize
+\color blue
+chm
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color blue
+mmmmmmmmmmmmmm
+\end_layout
+
+\end_inset
+
+od
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+mode
+\begin_inset space \space{}
+\end_inset
+
+file_name
+\series default
+\shape default
+ 
+\color black
+Change permissions of 
+\shape italic
+file_name
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+diff
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file1
+\begin_inset space \space{}
+\end_inset
+
+file2
+\series default
+\shape default
+ 
+\color black
+Compare 
+\shape italic
+file1
+\shape default
+ and 
+\shape italic
+file2
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+echo
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+string
+\series default
+\shape default
+ 
+\color black
+Echo a string to the terminal; useful in shell scripts
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+file
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\series default
+\shape default
+ 
+\color black
+Display the type of a file
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+find 
+\color black
+Search for files in the file system
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+git 
+\color black
+Version control system
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+grep
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+regexp
+\begin_inset space \space{}
+\end_inset
+
+file_name
+\series default
+\shape default
+ 
+\color black
+Search file(s) for regular expressions
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+lpr
+\begin_inset space \space{}
+\end_inset
+
+f
+\series medium
+\shape italic
+ile_name
+\series default
+\shape default
+ 
+\color black
+Print file with minimal formatting
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+make 
+\color black
+Build programs following a set of rules
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+rsync 
+\color black
+Synchronize files between directories or computers
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+scp 
+\color black
+Copy files to or from a remote computer
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+sed 
+\color black
+Stream editor; useful in shell scripts
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+sort
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\series default
+\shape default
+ 
+\color black
+Sort a file
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+ssh
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+user@computer
+\series default
+\shape default
+ 
+\color black
+Open a terminal session on a remote computer
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+tar 
+\color black
+Insert or extract files in an archive
+\end_layout
+
+\begin_layout Description
+
+\size footnotesize
+\color blue
+wc
+\begin_inset space \space{}
+\end_inset
+
+
+\series medium
+\shape italic
+file_name
+\series default
+\shape default
+ 
+\color black
+Display number of words, bytes, or lines in a file
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Keeping Files Synchronized with 
+\begin_inset Quotes eld
+\end_inset
+
+rsync
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Many of you probably have access to multiple computers.
+ For example, you may have
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+a desktop in your apartment
+\end_layout
+
+\begin_layout Itemize
+a laptop that you travel to campus with
+\end_layout
+
+\begin_layout Itemize
+file space on a Syracuse or remote computing cluster
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+rsync
+\begin_inset Quotes erd
+\end_inset
+
+ is one option
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Included by default in most Linux distributions
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 
+\begin_inset Quotes eld
+\end_inset
+
+rsync
+\begin_inset Quotes erd
+\end_inset
+
+ scripts
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Syncing files to server
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+#!/bin/sh
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+rsync -av ~/phy607/ ahnitz@example.syracuse.edu:ph607
+\end_layout
+
+\end_deeper
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Syncing files from MTU server
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+#!/bin/sh
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# rsync4390_from_mtu
+\end_layout
+
+\begin_layout Standard
+rsync -av ahnitz@example.syracuse.edu:phy607/ ~/phy607
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Source Code & File Version Management
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+GIT
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Available since 2005
+\end_layout
+
+\begin_layout Itemize
+Uses a distributed repository model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Each 
+\begin_inset Quotes eld
+\end_inset
+
+clone
+\begin_inset Quotes erd
+\end_inset
+
+ has its own revision history
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Popular for Linux and open source development
+\end_layout
+
+\begin_layout Itemize
+the most popular system at present
+\end_layout
+
+\begin_layout Itemize
+We will use GIT
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+GIT
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+(Figures from Pro GIT by Chacon & Straub)
+\end_layout
+
+\begin_layout Columns
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+0.55
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Columns
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Pro Git by Chacon & Straub: https://progit2.s3.amazonaws.com/en/2015-09-08-d73ca/pr
+ogit-en.816.pdf
+\end_layout
+
+\begin_layout Itemize
+Git - The Simple Guide by Dudler: http://rogerdudler.github.io/git-guide/
+\end_layout
+
+\end_deeper
+\begin_layout Columns
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+0.35
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../david/lecture2/distributed_vcs.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Columns
+
+\size footnotesize
+Distributed version control system like GIT
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
