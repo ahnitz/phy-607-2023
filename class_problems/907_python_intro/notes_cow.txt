@@ -1,12 +1,9 @@
-﻿1. Recap of bash scripting
-
-
-2. Introduction to GIT
+1. links for git useage
    1. https://rogerdudler.github.io/git-guide/
    2. https://www.pythonguis.com/tutorials/git-github-python/#checking-the-status-of-our-project
 
 
-3. Python Walkthrough outline
+2. Python Walkthrough outline
    1. the python interpreter
    2. control flow
       1. if / else
@@ -16,60 +13,12 @@
       2. lists
       3. tuples
    4. basic plotting
-  
-Resources for python
-  * Formatting: https://docs.python.org/3/tutorial/index.html
+ 
+3. Links for python  for python
+  * Tutorials: https://docs.python.org/3/tutorial/index.html
   * Style guide: https://peps.python.org/pep-0008/
   
 ________________
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 In class assignment: Falling Cow Simulator
@@ -96,14 +45,6 @@ Questions:
 1. Is energy conserved as a function of time?
 2. How does the trajectory change if you change the time step? What about as you make the time step approach zero?
 3. How does your trajectory compare to the analytic solution if you set air resistance to zero? 
-
-
-
-
-
-
-
-
 
 
 
