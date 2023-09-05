@@ -2,6 +2,8 @@
 
 
 2. Introduction to GIT
+   1. https://rogerdudler.github.io/git-guide/
+   2. https://www.pythonguis.com/tutorials/git-github-python/#checking-the-status-of-our-project
 
 
 3. Python Walkthrough outline
