@@ -14,7 +14,7 @@
       3. tuples
    4. basic plotting
  
-3. Links for python  for python
+3. Links for python 
   * Tutorials: https://docs.python.org/3/tutorial/index.html
   * Style guide: https://peps.python.org/pep-0008/
   
