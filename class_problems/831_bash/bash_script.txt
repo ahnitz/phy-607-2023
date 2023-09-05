@@ -1,0 +1,24 @@
+﻿Write a shell script to make tar backups of one directory into another. 
+1. For your development, create directories “backups” and “src” as sub-directories of some empty working directory. As all operations should be relative to this working directory, the path of the working directory is not relevant.
+2. Populate the sub-directory “src” with at least 5 files for testing purposes. The actual content or names of the files is not important, but your shell script should not depend upon knowing the file names.
+3. Create a shell script “do_full_backup” in the working directory.
+
+   1. When the command ./do_full_backup is executed from the working directory, the shell script should create a tar file in the “backups” sub-directory with a name that includes the time/date to at least second precision.
+   2. It should also create the “backup” directory if it does not exist.
+   3. Additionally, the script should remove all but the most recent 3 backup files.
+   4. The tar file should be formatted such that extracting files from the tar file when in the working directory described above will restore the “src” directory.
+
+
+Hint: There are many solutions using common commands. One of them makes use of pipes and includes the use of the commands date and xargs.
+
+One possible solution:
+
+#!/bin/bash
+mkdir -p backups
+backup_name=backup_`date '+%Y-%m-%d_%H_%M_%S'`.tar
+echo "Creating " $backup_name
+tar -cf backups/$backup_name src
+cd backups
+ls -t *.tar | tail -n +4 | xargs rm
+
+Bonus question: What's a potential problem with the following solution? How could it be improved?
