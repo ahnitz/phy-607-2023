@@ -1,0 +1,28 @@
+* Git continued
+   * resolving merge conflicts
+
+* python (general python reference and tutorials https://docs.python.org/3/tutorial/index.html)
+   * modules
+   * file i/o
+   * plotting
+   
+* spherical cow 
+   * produce standard output format
+       * Assume vx = 1 m/2 and vy = 100 m/s, drag = 0, x0=0, y0=1000
+       * for dt = .001
+       * write a file that contains three columns, space separated
+           * time position_x position_y
+           * email file to ahnitz@syr.edu
+   * plot x and y position for the entire trejectory
+       * plot the analytic prediction for the trajectory
+       * do they agree?
+   * Plot the kinetic, potential, and total energy.
+       * Is the total energy conserved?
+
+* Python Style guide
+   * https://realpython.com/python-pep8/
+   * automatic code formatting (https://black.readthedocs.io/en/stable/)
+
+* Next Thursday
+    * Introduction to Project 1.
+
