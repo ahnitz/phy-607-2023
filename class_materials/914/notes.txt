@@ -14,12 +14,15 @@
        * google / stackoverflow 
        * https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html
    * Introduction of project 1 [to be done individually]
-       * Full Project Due Oct 1
-           * Initial project plan due on Sept 19th
+       * Initial project plan due on Sept 19th
+            * Prepare a written summary of your plan which we will discuss 
+              next Tuesday
        * Initial project plan
-            * Pick an ODE with one dimension to solve numerically
-            * Pick an integral with one dimesion to solve numerically
+            * (a) Pick an ODE with one dimension to solve numerically
+            * (b) Pick an integral with one dimesion to solve numerically
             * The integral and ODE should have an exact solution
-            * You should be able to write down at least two distinct limiting
-              scenarios for each.
+            * You should write down at least two physical behaviors which
+              can be verified for (a) and (b), e.g. conservation laws, limiting
+              scenarios, etc.
+       * Full Project Due Oct 1 
 
