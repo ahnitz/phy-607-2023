@@ -13,7 +13,7 @@
        * write a file that contains three columns, space separated
            * time position_x position_y
            * email file to ahnitz@syr.edu
-   * plot x and y position for the entire trejectory
+   * plot x vs y position for the entire trejectory
        * plot the analytic prediction for the trajectory
        * do they agree?
    * Plot the kinetic, potential, and total energy.
@@ -23,6 +23,6 @@
    * https://realpython.com/python-pep8/
    * automatic code formatting (https://black.readthedocs.io/en/stable/)
 
-* Next Thursday
+* This Thursday
     * Introduction to Project 1.
 
