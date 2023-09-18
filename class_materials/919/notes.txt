@@ -1,0 +1,17 @@
+* More details on Project 1
+* numerical precision [pick up from last class]
+    * error example 1
+    * error analysis with numerical error (standard error propagation!)
+    * error example 2
+* how can you find resources on programming?
+    * https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html
+    * documentation of libraries
+    * google / stackoverflow 
+* Style guide
+    * pep 8 styles
+    * automatic formatters
+* python environments
+    * venv / conda
+* packages
+    * matplotlib / numpy / scipy 
+
