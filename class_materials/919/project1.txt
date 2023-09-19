@@ -38,8 +38,8 @@ A number of technical components are required for full credit.
 - Commit your work to your github repository in a clearly named self-contained
   folder.
 - For the ODE problem
-  - You must implement an ODE integrator/evolver by hand. You must also compare
-    to one provided by the Scipy library. 
+  - You must implement an ODE integrator/evolver by hand. You shoudl implement both 
+    Euler's method and 4th order Runge-kutta (you do not need to derive the weights). You    must also compare to one provided by the Scipy library. 
 - For the the definite integral problem
   - you must implement an integrator using the simple riemann sum, the trapezoidal rule, 
     and simpson's rule. In the case of the trapezoidal and simpson's rule, compare to 
