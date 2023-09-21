@@ -1,0 +1,21 @@
+# Packaging guidelines and documentation are here 
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+
+[project]
+name = "example_package"
+version = "0.0.1"
+dependencies = [
+   "numpy",
+]
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

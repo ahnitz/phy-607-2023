@@ -1,0 +1,22 @@
+* project1
+    * instructions for runge-kutta / latex will be distributed today
+* correction on python ints (no max size in python3)
+* python types continued
+    * tuples, dictionaries, lists
+* packages
+* classes
+    * inheritence
+    * common methods
+    * special methods
+        * operators
+* [in class project] 
+    * high precision floating point object
+          * add / subtract / multiply / divide
+    * high precision vector inherited from list
+          * (same methods as the floating point object)
+          * implement a sort method
+[next class]
+* timing of functions
+* profiling
+* computational complexity 
+    
