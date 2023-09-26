@@ -1,0 +1,27 @@
+* Timing 
+   * Use %timit in the python intepretor
+   * plot the time to do a calculation
+       * Calculate   
+           * a should be a vector containing numbers between 0 and 1
+                * use numpy.random.uniform to draw these
+           * z = (a + a) * (a *a - a) / a
+           * plot the time to complete the calculation as a function of the
+             size of the vector n, where n = [1e2, 1e3, 1e4, 1e5]
+   * profiling
+       * https://docs.python.org/3/library/profile.html#module-cProfile
+   * computational complexity
+       * time / space
+           * best / average / worst
+       * what is the computational complexity of your sort algorithm?
+       * sort algorithms
+            * bubble sort
+            * bogo sort
+            * insertion sort
+            * merge sort
+            * ....
+      * implement one other sorting algorithm for your vector class (keep the
+            existing one as well)
+            * plot the computational time / cost for n=1e2, 1e3, 1e4, 1e5 for
+              both algorithms on the same plot.
+      * time complexity in python
+        * https://wiki.python.org/moin/TimeComplexity
