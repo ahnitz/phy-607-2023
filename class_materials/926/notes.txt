@@ -9,7 +9,7 @@
              size of the vector n, where n = [1e2, 1e3, 1e4, 1e5]
    * profiling
        * https://docs.python.org/3/library/profile.html#module-cProfile
-   * computational complexity
+   * computational complexity [to be continued next class]
        * time / space
            * best / average / worst
        * what is the computational complexity of your sort algorithm?

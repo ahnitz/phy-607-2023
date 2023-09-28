@@ -11,8 +11,9 @@
   * search algorithm
   * implement one other sorting algorithm for your vector class (keep the
         existing one as well)
-        * plot the computational time / cost for n=1e2, 1e3, 1e4, 1e5 for
+        * plot the computational time as a function of n / for n=1e1, 1e2, 1e3, 1e4 for
           both algorithms on the same plot.
         * implement an O(nlogn) algorithm if you don't already have one
+        * Use random numbers for input
   * time complexity in python
     * https://wiki.python.org/moin/TimeComplexity
