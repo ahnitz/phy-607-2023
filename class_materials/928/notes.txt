@@ -1,0 +1,18 @@
+* computational complexity
+   * time / space
+       * best / average / worst
+   * what is the computational complexity of your sort algorithm?
+   * sort algorithms
+        * bubble sort
+        * bogo sort
+        * insertion sort
+        * merge sort
+        * ....
+  * search algorithm
+  * implement one other sorting algorithm for your vector class (keep the
+        existing one as well)
+        * plot the computational time / cost for n=1e2, 1e3, 1e4, 1e5 for
+          both algorithms on the same plot.
+        * implement an O(nlogn) algorithm if you don't already have one
+  * time complexity in python
+    * https://wiki.python.org/moin/TimeComplexity
