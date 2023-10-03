@@ -1,0 +1,51 @@
+* Complexity continued
+    * time complexity in python
+        https://wiki.python.org/moin/TimeComplexity
+    * other common algorithms
+        * matrix multiplication -> strassen's algorithm
+        * fourier transform -> fast fourier transform
+    * space complexity
+* Monte-carlo simulations
+    * examples
+* Random numbers
+    * numpy
+        * pseudorandom numbers
+    * drawing from specific distributions
+        * Using the inverse CDF
+        * Using rejection sampling
+* In-class work
+    * try inverse CDF and rejection sampling with exponential function 
+    * classic PI estimation
+        * What about an ellipse? (or other function)
+* Monte carlo integration [next class]
+    * uncertainty
+    * importance sampling
+
+* Project 2 [introduced next class]
+    * Will be done in groups of 2.
+    * write a single report
+    * Must include a monte carlo simulation of discrete elements (say particles,
+        atoms, stars).
+    * must include an evolution based on an 2nd order ODE
+        (evolution of trajectory under a force, or state evolution) 
+    * There must be opportunities for probabilistic interactions (say surface
+        interaction which may have specular or diffuse reflection, or 
+        interaction probability between particles, decay probability, etc)
+    * Must identify a key result that summarizes the properties of the discrete
+        elements. (e.g. spatial distribution and type of particle hitting a detector,
+                   mass distribution after evolution of gravitational n-body problem, etc). 
+    * Must identify properties of the simulation and result that can be
+          validated based on physical expectation (e.g. symmetries, conservations, etc). 
+    * Technical
+        * write a single package with included main script
+        * use numpy / scipy where applicable
+        * Should create a class
+        * must follow pep8 style (use black to help enforce style)
+        * code must be documented following numpydoc format 
+            * https://numpydoc.readthedocs.io/en/latest/format.html
+    * Report
+        * should assess the computational complexity of your algorithm
+            * both numerically and from first principles
+        * assess the errors introduced by finite precision,
+            numerical integration, and statistical sampling
+        
