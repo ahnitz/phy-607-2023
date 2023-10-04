@@ -1,0 +1,56 @@
+* Random numbers [continued]
+    * numpy
+        * pseudorandom numbers
+    * drawing from specific distributions
+        * Using the inverse CDF
+        * Using rejection sampling
+* In-class work
+    * try inverse CDF and rejection sampling with exponential function 
+        * compare using a normal or a quadratic function for rejection sampling
+          Which is more efficient?
+    * classic PI estimation
+        * What about an ellipse? (or other function)
+* Monte carlo integration
+    * uncertainty
+    * importance sampling
+
+* Project 2
+    * Timeline
+        * By Oct 11, find a partner, agree on a project concept
+          and submit a plan that includes (1) a description of the simulation
+          and (2) psuedocode of the main simulation program and (3) a plan for how
+          the work will be divided between the group members. This should
+          include what modules need to be written, what the expected functions
+          or classes are and what you expect them to do 
+          (the final implementation can diverge from this). No implementation 
+          is required at this point.
+        * By Oct 17, each group member should have completed their individual
+          contributions so that it can be integrated and tested together.
+        * Oct 24, Full project and report are due
+    * Will be done in groups of 2.
+    * write a single report
+    * Conceptual elements
+        * (1) Must include a monte carlo simulation of discrete elements (say particles,
+        atoms, stars).
+        * (2) must include an evolution based on an 2nd order ODE
+        (evolution of trajectory under a force, or state evolution) 
+        * (3) There must be opportunities for probabilistic interactions (say surface
+            interaction which may have specular or diffuse reflection, or 
+            interaction probability between particles, decay probability, etc)
+        * (4) Must identify a key result that summarizes the properties of the discrete
+              elements. (e.g. spatial distribution and type of particle hitting a detector,
+              mass distribution after evolution of gravitational n-body problem, etc). 
+        * (5) Must identify properties of the simulation and result that can be
+              validated based on physical expectation (e.g. symmetries, conservations, etc). 
+    * Technical [additional requirements to come]
+        * write a single python package (installable) with included main script
+        * use numpy / scipy where applicable
+        * Should create at least two classes
+        * must follow pep8 style (use black to help enforce style)
+        * code must be documented following numpydoc format 
+            * https://numpydoc.readthedocs.io/en/latest/format.html
+    * Report [additional requirements to come]
+        * should assess the computational complexity of your algorithm
+            * both numerically and from first principles
+        * assess the errors introduced by finite precision,
+            numerical integration, and statistical sampling
