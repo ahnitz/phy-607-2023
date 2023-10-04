@@ -8,8 +8,8 @@
     * try inverse CDF and rejection sampling with exponential function 
         * compare using a normal or a quadratic function for rejection sampling
           Which is more efficient?
-    * classic PI estimation
-        * What about an ellipse? (or other function)
+    * classic PI estimation [demonstration]
+        * What about an ellipse?
 * Monte carlo integration
     * uncertainty
     * importance sampling
