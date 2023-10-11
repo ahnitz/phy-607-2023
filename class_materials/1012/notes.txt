@@ -1,0 +1,14 @@
+* Class Business
+    * Project 1 Feedback
+    * Project 2 preassignments
+    * Next week (Oct 17 & 19th) classes will be online
+* Python things
+    * numpy elementwise operations
+    * argument parsing
+    * review?
+* In-class work
+    * classic PI estimation [demonstration]
+    * What about an ellipse?
+* Monte carlo integration
+    * uncertainty
+    * importance sampling
