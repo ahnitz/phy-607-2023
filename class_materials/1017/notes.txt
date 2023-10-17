@@ -1,0 +1,8 @@
+* Class Business
+    * Questions on project 2?
+* Python tips
+    * argument parsing
+    * review?
+* Project 2 group working time
+    * Invidual group breakout and
+      feedback
