@@ -45,7 +45,7 @@
             * incremental changes and work by each group member should be evident from the history of git commits. Do not simply upload files at the end. Develop in git.
             * both members must contribute roughly equally to the code development
         * use scipy or some external algorithm to implmement the ODE solver
-        * must use probability distributions (at least two), that demonstrate both rejection sampling and  
+        * must use probability distributions (at least two), that demonstrate both rejection sampling and the inverse CDF method.
     * Report
         * The report should details the problem being simulated, highlighting the
           high-level algorithm, the probability distributions used. It should be written
