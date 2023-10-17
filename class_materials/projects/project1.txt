@@ -1,0 +1,66 @@
+# Project 1 Description.
+
+In this project you will create a set of python modules that calculate the integral of 
+some Physics problem. This includes solving two physics problesm. 
+One that is described by an ODE and another a definite integral of an analytic
+function. Both must have an analytic solution.
+
+Try to make it relatively straightforward to vary how your code runs, even if you do not provide scripts to run all variations or arguments to control the script without editing it. For instance:
+- Make it easy to change between similar integrals
+- Change the parameters of the integration: numbers of points, ranges, etc.
+- Change the boundary condition if using a simple differential equation.
+
+## Examples
+
+A few possible suggestions:
+- Use Coulomb's law to find the electric field for some symmetric one-dimensional charge distribution.
+- Compute the second virial coefficient for some inter-particle potential as a function of temperature.
+- Solve for an orbital trajectory in a central force using the indefinite integral form for the angle as a function of radius.
+
+## Required technical components
+
+A number of technical components are required for full credit. 
+- Create a set of python functions that are well documented and have clear
+  interfaces.
+   - Document your code using comments and/or docstrings where applicable.
+   - follow standard python formatting guidelines (PEP8)
+   - it should be straightforward to switch between different integration methods
+- Create multiple python files and import between them.
+- Provide a "main" script that produces the results for your write-up,
+  including any figures or demonstrations. One should not have to edit the files
+  to produce the complete set of results. However, if command line arguments
+  are used, running with different options is allowed.
+  - You may have a separate 'main' script for the ODE and definite integral
+    problems.
+- I must be able to run your code successfully for full credit, so please specify if your code has additional dependencies. 
+- Include a 'useage' readme file in your repository that details how to run the code.
+- Use at least one example of a `numpy` element-wise calculation.
+- Commit your work to your github repository in a clearly named self-contained
+  folder.
+- For the ODE problem
+  - You must implement an ODE integrator/evolver by hand. You shoudl implement both 
+    Euler's method and 4th order Runge-kutta (you do not need to derive the weights). You    must also compare to one provided by the Scipy library. 
+- For the the definite integral problem
+  - you must implement an integrator using the simple riemann sum, the trapezoidal rule, 
+    and simpson's rule. In the case of the trapezoidal and simpson's rule, compare to 
+    the similar implementations in Scipy. 
+
+## Required report
+
+You must also write up a report on your project. The write-up must include a brief description of the physics problems you are analyzing, the integration algorithms you have implemented, and some example results. The report shoud be formatted similar to a scientific paper with clear sections.
+
+There must be a section on the validation of your implementations, where you detail your comparison to the analytic solution and test each problem against two expected physical properties (e.g. related to conservation rules, limiting cases, etc.). 
+
+The results must include figures of at least two example solutions, including comparisons between your method, the exact solution, and external algorithms (e.g. from scipy) you import. Try to identify at least one situation in which your code performs noticeably worse than the exact solution or external algorithm. Discuss the instances where your solution gives error relative to the exact solution, and how it could be improved.
+
+Use LaTeX to typeset your report. You may use services such as Overleaf which can provide standard templates to aid in this or use any other software of your choosing.
+ 
+## Further suggestions
+
+Especially if you already feel comfortable with implementing the basic programming, I encourage you to push yourself to learn new things! A few suggestions for things to try that will likely be valuable in the future:
+- Use a package such as `argparse` to control your script's configuration and flow without having to edit the files directly.
+- Use `timeit` to compare the execution time of different algorithms.
+- If your integration has an infinite limit, use a change of variables to change the integration range to a finite one and compare the results.
+- Learn about matplotlib options beyond the basics!
+
+
