@@ -1,0 +1,16 @@
+* project 2 questions
+* Python things
+    * requirements.txt files
+    * review?
+* optimization
+    * brute force / explicit exploration
+    * gradient descent
+        * How to ensure convergence?
+    * newtons method
+    * failure modes?
+        * global vs local
+    * transforming to other problems
+    * nelder-mead (optional)
+* in-class exercise
+    * Use explicit exploration, gradient descent and newton's method to
+      find the minima of the rosenbrock function (example code given in class)
