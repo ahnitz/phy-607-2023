@@ -13,4 +13,4 @@
     * nelder-mead (optional)
 * in-class exercise
     * Use explicit exploration, gradient descent and newton's method to
-      find the minima of the rosenbrock function (example code given in class)
+      find the minima of the 2-d rosenbrock function
