@@ -1,0 +1,21 @@
+* Python things
+    * requirements.txt files
+    * review?
+* optimization
+    * gradient descent
+        * how to calculate a gradient numerically? 
+            * https://en.wikipedia.org/wiki/Finite_difference_coefficient#Forward_and_backward_finite_difference
+        * How to ensure convergence?
+        * How to set the stepsize?  
+            * https://en.wikipedia.org/wiki/Barzilai-Borwein_method
+    * newtons method
+    * failure modes?
+        * global vs local
+    * transforming to other problems
+* in-class exercise (continued)
+    * Use explicit gradient descent and newton's method to
+      find the minima of the 2-d rosenbrock function
+    * Start each method at each of the 4 corners? How many iterations does
+      it take for each method to get within 1e-10 of the minimum value (0). 
+         * Does it get stuck at any other locations? 
+    * Plot the the path that each iteration traverses through
