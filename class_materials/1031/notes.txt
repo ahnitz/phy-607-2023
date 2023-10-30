@@ -1,0 +1,19 @@
+* Python things
+    * requirements.txt files
+    * review?
+* optimization
+    * gradient descent
+    * newtons method
+    * Nelder mead
+    * transforming to other problems
+* function fitting
+    * least squares
+    * goodness of fit
+        * adjusted R^2
+* in-class exercise [in groups of 3]
+    * (1) develop a model for the data, each group member should try a 
+          different model
+    * (2) each person should use one of thier minimizers to fit the data
+    * (3) test the goodness of fit by calculated the adjusted R^2
+    * (4) compare the ability of each model in the group to fit to the
+          data
