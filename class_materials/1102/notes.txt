@@ -1,0 +1,22 @@
+* Python things
+    * review
+    * project 2
+* function fitting
+    * least squares
+    * goodness of fit
+        * adjusted R^2
+    * review of class excercise
+        * How well did each person's model fit?
+* incorporating noise in your model
+    * fitted peak value --> distribution of fits
+    * bayes theorem
+        * likelihood functions
+    * markov chain monte carlo
+        * detailed balance
+        * metropolis hastings
+        * correlations
+        * ensembles
+* start in class
+    * determine the posterior distribution for your models parameters
+    * If you chose a model with > 3 parameters, I might suggest you simplify
+      the model to at most three to maket this tractable.
