@@ -1,4 +1,6 @@
 * Class news
+    * Project 2 notes
+        * git usage 
     * Project 2 can be resubmitted
 * Python things
     * creating a package with installable scripts (executables)
