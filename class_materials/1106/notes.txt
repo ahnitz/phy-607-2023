@@ -1,0 +1,22 @@
+* Class news
+    * Project 2 can be resubmitted
+* Python things
+    * creating a package with installable scripts (executables)
+* MCMC
+    * bayes theorem
+    * metropolis hastings
+    * autocorrelation
+    * convergence 
+    * ensemble sampling
+* in-class work
+    * use your prewritten likelihood function and priors (of choice)
+    * write a 500 walker ensemble MCMC and run for 1000 iterations
+    * Plot the distribution of the walker positons after every 100 iterations.
+      How does the distribution evolve?
+      Has the distribution converged?
+* Next class
+    * convergence tests
+    * model comparison
+* Project 3
+
+ 
