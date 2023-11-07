@@ -1,0 +1,26 @@
+[project]
+name = "pap"
+version = "0.0.1"
+authors = [
+  { name="someperson", email="author@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "h5py",
+    ]
+    
+[project.scripts]
+pap-cli = "pap.test_cli:test_cli"
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
