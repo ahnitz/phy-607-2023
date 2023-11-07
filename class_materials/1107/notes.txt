@@ -7,7 +7,8 @@
 * MCMC
     * bayes theorem
     * metropolis hastings
-    * autocorrelation
+    * burn-in
+    * autocorrelation 
     * convergence 
     * ensemble sampling
 * in-class work
@@ -17,8 +18,9 @@
       How does the distribution evolve?
       Has the distribution converged?
 * Next class
+    * failure modes
+    * dealing with correlations
     * convergence tests
-    * model comparison
+    * Can we compare models?
 * Project 3
-
  
