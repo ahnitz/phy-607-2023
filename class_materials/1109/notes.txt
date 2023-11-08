@@ -1,0 +1,20 @@
+* Class news
+    * project 3
+* MCMC
+    * bayes theorem
+    * metropolis hastings
+    * burn-in
+    * autocorrelation time/length
+        * https://emcee.readthedocs.io/en/stable/tutorials/autocorr/
+    * convergence 
+    * ensemble sampling
+* in-class work
+    * extend metropolis hasting to multiple dimensions
+    * use your prewritten likelihood function and priors (of choice)
+    * first get single walker to run for 100000 iterations
+    * Plot the distribution of the walker positons after every 1000 iterations.
+      * How does the distribution evolve?
+      * Has the distribution converged?
+    * write a 500 walker ensemble MCMC and run for 1000 iterations
+* project 3 group discussion time
+ 
