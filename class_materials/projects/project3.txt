@@ -1,0 +1,67 @@
+* Project 3
+    * Timeline
+        * (in class) Nov 9, discuss with your partner your choice of project
+          and how you will split the work amoung yourselves. 
+        * Nov 13 your project should be decided.
+        * Nov 17 principle code and testing should be concluded
+        * Nov 28th submit report along with final code
+    * Will be done in groups of 2
+    * write a single report & submit a single git repository with the developed code
+    * Conceptual elements
+        * In this project you will use Markov Chain Monte Carlo methods to sample
+          from a multidimensional distribution.
+        * You should choose a statistical problem with a non-trivial parameter
+          space. 
+                * It may be an analysis of some data using Bayesian Inference
+                  or the exploration of a multi-dimensional distribution
+                  from elsewhere in physics (for example, the 2d ising model,
+                  quantum mechanics).
+                * You are welcome to use actual research problems if you have
+                  them.
+        * A key requirement is to choose carefully the parameters of your algorithm.
+          You should motivate your choice of proposal function, examine the correlation 
+          of your samples, and think critically about the effect on your results of
+          parameters such as burn-in period, total iterations, and autocorrelation
+          length. You should discuss your choices in your report.
+    * Technical
+        * The code should be in a new git repository shared between the group members
+        * write a single python package (installable) with included main script that runs the simuation
+            * https://packaging.python.org/en/latest/tutorials/packaging-projects/
+              https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+            * The main script should be installed along with the package.
+            * The package should list its dependencies needed to run the package
+        * use numpy / scipy where applicable
+             * make use of elementwise array operations
+        * must follow pep8 style (use black to help enforce style)
+        * functions / classes / modules must be documented following numpydoc format 
+            * https://numpydoc.readthedocs.io/en/latest/format.html
+        * comments should still be used to document pieces of the algorithm within functions / methods / etc.
+        * use git for your development.
+            * incremental changes and work by each group member should be evident from the history of git commits. Do not simply upload files at the end. Develop in git.
+            * both members must contribute roughly equally to the code development
+        * you should compare two methods for estimating the model parameters
+            (1) a hand written mcmc and (2) an off the shelf implementation
+                from a library of choice (e.g. emcee or others).
+        * You must implement methods to validate that your mcmc chain
+          has either converged or is self consistent. You should pick at
+          least two methods of convergence testing. One may be informal
+          (see https://www.statlect.com/fundamentals-of-statistics/Markov-Chain-Monte-Carlo-diagnostics),
+          but at least one should provide a numerical metric (e.g. Gelman Rubin).
+          (see https://bookdown.org/rdpeng/advstatcomp/monitoring-convergence.html)
+    * Report
+        * The report should details the problem being simulated (e.g. highlighting the
+          high-level algorithm, choice of proposal, model, priors where relevant).
+        * It should be written using latex in a scientific format.
+        * The report shoud be formatted similar to a scientific paper with clear sections.
+        * Detail the properties of the samples produced by your analysis
+        * There should be an explicit validation section that discusses
+          and provides evidence that the results are consistent with expecation.
+          This should be reasoned based on your critical analysis of the problem
+          at hand and the chosen model itself. For example, if your model
+          has symmetries or parameter degeneracies, are these represented in the
+          result?
+        * You should also separately validate that the MCMC is consistent with
+          having converged. Compare your hand written mcmc and the off
+          the shelf method. 
+            * At least one method should pass your validation tests. If one
+            * fails you should critically analyze why this may have occured.          
