@@ -28,4 +28,4 @@
         * 5 minutes walk through your solution to the problem
     * You will be graded on completing the elements of your tutorial and your
       participation in completeing the other group's tutorials
-    * Group tutorials will be given Dec 5th, 7th, and 12th. 
+    * Group tutorials will be given Dec 5th, 7th, and 12th.
