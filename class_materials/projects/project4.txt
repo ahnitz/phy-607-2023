@@ -1,0 +1,31 @@
+* Interactive Tutorial
+    * This will be done in groups of two
+        * Each should contribute equally to the create of the tutorial and the
+        * associated presentation in-class. 
+    * Submit your project idea by the end of this week.
+    * Elements
+        * choose an computational algorithm, library, or tool to explain to the
+          class.
+            * you might demonstrate the use of a particular library
+               (e.g. pytorch, scipy, etc).
+            * you might demonstrate an algorithm that is useful in physics
+               * fourier transforms, PDEs, 
+               * you may ask your research group if applicable for ideas
+        * create a short tutorial (no more than 15 minutes)
+            * The tutorial should have some explanation and relate how the topic
+              might be used or relate to physics.
+            * The tutorial should have a single problem for the class to work out
+              that involves writing a (small) amount of code. Try to make sure
+              this can be worked out in ~ 10-15 minutes in class.
+            * Work out a solution yourself but do not provide
+              the solution initially.
+        * The tutorial should be development in git and the class should
+          access the tutorial by clone the git repository.
+    * Time allocation
+        * 10-15 minutes to explain the concept and introduce the tutorial
+        * 20 minutes, assist class members in completing your tutorial challenge
+          problem.
+        * 5 minutes walk through your solution to the problem
+    * You will be graded on completing the elements of your tutorial and your
+      participation in completeing the other group's tutorials
+    * Group tutorials will be given Dec 5th, 7th, and 12th. 
