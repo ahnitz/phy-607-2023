@@ -1,16 +1,16 @@
 * Interactive Tutorial
     * This will be done in groups of two
         * Each should contribute equally to the create of the tutorial and the
-        * associated presentation in-class. 
+        * associated presentation in-class.
     * Submit your project idea by the end of this week.
     * Elements
         * choose an computational algorithm, library, or tool to explain to the
-          class.
+          class. It should not be a topic we directly covered in class.
             * you might demonstrate the use of a particular library
                (e.g. pytorch, scipy, etc).
             * you might demonstrate an algorithm that is useful in physics
-               * fourier transforms, PDEs, 
-               * you may ask your research group if applicable for ideas
+               * fourier transforms, PDEs, etc.
+            * you may ask your research group if applicable for ideas
         * create a short tutorial (no more than 15 minutes)
             * The tutorial should have some explanation and relate how the topic
               might be used or relate to physics.
